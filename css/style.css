@@ -95,9 +95,40 @@ header {
     padding: 5px 0 0 0;
 }
 
-
+.background-video {
+    position: absolute; /* Position the video behind the content */
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretch video to full width */
+    height: 100%; /* Stretch video to full height */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    z-index: -1; /* Place video behind the content */
+}
 
 /* BLOCK OF COUNTRY ON MAIN PAGE */
+
+
+/* Picture-background container */
+
+.img-based-container {
+    position: relative; /* Allows positioning of overlay content */
+    width: 100%; /* Full width */
+    max-width: 900px; /* Maximum width */
+    margin: 20px auto; /* Center block horizontally */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Clip overflowing content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow */
+    background-color: #0d1b36; /* Fallback background */
+    text-align: center; /* Center-align text */
+}
+
+
+
+
+
+
+
+
 
 /* Main container */
 .info-block {
@@ -185,8 +216,22 @@ header {
     background-image: url('/media/label.png');
 }
 
-
-
+.descibe-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+/* Image for image-based block */
+.background-image img {
+    width: 100%; /* Stretch image to full width */
+    height: 100%; /* Stretch image to full height */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    position: absolute; /* Position the image behind the content */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place image behind the text */
+}
 
 
 /* NAV BAR */
