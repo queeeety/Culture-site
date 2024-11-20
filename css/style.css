@@ -1,3 +1,37 @@
+/* OUR COLORS */
+
+.color1 {
+    color: rgba(0, 7, 45, 1);
+}
+.color2 {
+    color: rgba(0, 28, 85, 1);
+}
+.color3 {
+    color: rgba(10, 36, 114, 1);
+}
+.color4 {
+    color: rgba(52, 91, 206, 1);
+}
+.color5 {
+    color: rgba(166, 225, 250, 1);
+}
+
+.bg-color1 {
+    background-color: rgba(0, 7, 45, 1);
+}
+.bg-color2 {
+    background-color: rgba(0, 28, 85, 1);
+}
+.bg-color3 {
+    background-color: rgba(10, 36, 114, 1);
+}
+.bg-color4 {
+    background-color: rgba(52, 91, 206, 1);
+}
+.bg-color5 {
+    background-color: rgba(166, 225, 250, 1);
+}
+
 /* FONTS AND CONNECTED STUFF */
 p, h1, h2, h3, h4, h5, h6, a, figcaption, li, .nav-link {
     font-family: "Lato", sans-serif;
@@ -19,6 +53,15 @@ p, h1, h2, h3, h4, h5, h6, a, figcaption, li, .nav-link {
     text-align: left;
 }
 
+
+.main-description {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+    color: #A6E1FA;
+    padding: 50px 40px;
+}
+
 /* BACKGROUND AND BLOCKS*/
 body {
     /*display: block;*/
@@ -33,7 +76,7 @@ header {
     width: 100%;
     height: 100vh;
 }
-.hero {
+.hero { /* Section of text in header */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -41,7 +84,7 @@ header {
     z-index: 1;
 }
 
-.hero-image {
+.hero-image { /* Section of header */
     position: relative;
     background-image: url('media/label.png'); /* Замінити на вашу картинку */
     background-size: cover;
@@ -50,6 +93,87 @@ header {
     color: white;
     text-align: center;
     padding: 5px 0 0 0;
+}
+
+
+
+/* BLOCK OF COUNTRY ON MAIN PAGE */
+/* Main container */
+.info-block {
+    display: flex;
+    flex-direction: row; /* Ensure items are aligned in a row */
+    align-items: stretch; /* Stretch items to fill the height */
+    justify-content: space-between; /* Add space between image and text */
+    border-radius: 15px;
+    overflow: hidden; /* Clip overflowing content */
+    padding: 0;
+    color: white;
+    width: 90%; /* Make it responsive */
+    max-width: 900px; /* Maximum width for larger screens */
+    margin: 50px auto; /* Center the block horizontally */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Image container */
+.info-image {
+    flex: 0 0 60%; /* Reserve exactly 50% of the width */
+    max-width: 100%; /* Prevent the image from exceeding 50% */
+    height: 100%; /* Ensure the image takes the full height */
+    padding: 0;
+}
+.info-link {
+    text-decoration: none;
+    padding: 0;
+}
+/* Image styling */
+.info-image img {
+    width: 100%; /* Stretch the image to fill the container width */
+    height: 100%; /* Stretch the image to fill the container height */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+}
+
+/* Text block styling */
+.info-text {
+    flex: 0 0 40%; /* Reserve exactly 50% of the width for text */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+}
+
+/* Text styles */
+.label {
+    font-size: 2rem;
+    margin: 0 0 10px;
+}
+
+.sublabel {
+    color: rgba(166, 225, 250, 1); /* Light blue color */
+    font-size: 1.6rem;
+    margin: 10px 0 20px;
+    line-height: 1.5;
+}
+
+/* Links styling */
+.info-block .links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    margin-bottom: 10px; /* Add space between items */
+}
+
+.links li a {
+    text-decoration: none; /* Remove underline */
+    color: rgba(166, 225, 250, 1); /* Light blue color */
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.links li a:hover {
+    color: #ffffff; /* Change color to white on hover */
 }
 
 
