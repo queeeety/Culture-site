@@ -86,10 +86,10 @@ header {
 
 .hero-image { /* Section of header */
     position: relative;
-    background-image: url('media/label.png'); /* Замінити на вашу картинку */
+    background-image: url('media/label.png');
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Висота секції */
+    height: 100vh;
     color: white;
     text-align: center;
     padding: 5px 0 0 0;
@@ -98,27 +98,28 @@ header {
 
 
 /* BLOCK OF COUNTRY ON MAIN PAGE */
+
 /* Main container */
 .info-block {
     display: flex;
-    flex-direction: row; /* Ensure items are aligned in a row */
-    align-items: stretch; /* Stretch items to fill the height */
-    justify-content: space-between; /* Add space between image and text */
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
     border-radius: 15px;
-    overflow: hidden; /* Clip overflowing content */
+    overflow: hidden;
     padding: 0;
     color: white;
-    width: 90%; /* Make it responsive */
-    max-width: 900px; /* Maximum width for larger screens */
-    margin: 50px auto; /* Center the block horizontally */
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Image container */
 .info-image {
-    flex: 0 0 60%; /* Reserve exactly 50% of the width */
-    max-width: 100%; /* Prevent the image from exceeding 50% */
-    height: 100%; /* Ensure the image takes the full height */
+    flex: 0 0 60%;
+    max-width: 100%;
+    height: 100%;
     padding: 0;
 }
 .info-link {
@@ -127,18 +128,18 @@ header {
 }
 /* Image styling */
 .info-image img {
-    width: 100%; /* Stretch the image to fill the container width */
-    height: 100%; /* Stretch the image to fill the container height */
-    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Text block styling */
 .info-text {
-    flex: 0 0 40%; /* Reserve exactly 50% of the width for text */
+    flex: 0 0 40%;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center text vertically */
+    justify-content: center;
 }
 
 /* Text styles */
@@ -148,7 +149,7 @@ header {
 }
 
 .sublabel {
-    color: rgba(166, 225, 250, 1); /* Light blue color */
+    color: rgba(166, 225, 250, 1);
     font-size: 1.6rem;
     margin: 10px 0 20px;
     line-height: 1.5;
@@ -156,24 +157,24 @@ header {
 
 /* Links styling */
 .info-block .links {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
 .links li {
-    margin-bottom: 10px; /* Add space between items */
+    margin-bottom: 10px;
 }
 
 .links li a {
-    text-decoration: none; /* Remove underline */
-    color: rgba(166, 225, 250, 1); /* Light blue color */
+    text-decoration: none;
+    color: rgba(166, 225, 250, 1);
     font-size: 1rem;
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.3s ease;
 }
 
 .links li a:hover {
-    color: #ffffff; /* Change color to white on hover */
+    color: #ffffff;
 }
 
 
@@ -207,12 +208,12 @@ header {
 
 .navbar-toggler {
     border: none; /* No hamburger border */
-    background-color: transparent; /* Знімає темне тло */
+    background-color: transparent;
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover {
-    background-color: transparent; /* Забороняє зміну кольору на темний при наведенні */
-    box-shadow: none; /* Прибирає тінь */
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .navbar-toggler-icon {
