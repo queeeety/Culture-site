@@ -1,0 +1,99 @@
+/* FONTS AND CONNECTED STUFF */
+p, h1, h2, h3, h4, h5, h6, a, figcaption, li, .nav-link {
+    font-family: "Lato", sans-serif;
+    padding: 0 5px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.hero .label {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.hero .sublabel {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* BACKGROUND AND BLOCKS*/
+body {
+    /*display: block;*/
+    margin: 0;
+    background-color: #00072D;
+}
+
+header {
+    padding: 0 0;
+    margin: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100vh;
+}
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, 0%);
+    z-index: 1;
+}
+
+.hero-image {
+    position: relative;
+    background-image: url('media/label.png'); /* Замінити на вашу картинку */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Висота секції */
+    color: white;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+
+
+
+/* IMAGES */
+
+.main-bg {
+    background-image: url('/media/label.png');
+}
+
+
+
+
+
+/* NAV BAR */
+.custom-navbar {
+    background-color:rgba(10, 36, 114, 0.8); /* BG */
+    border-radius: 25px; /* Rounded edges */
+    padding: 10px 20px;
+    margin: 0 10px 10px 10px;
+}
+
+.custom-navbar .nav-link {
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px;
+}
+.custom-navbar .nav-link:hover {
+    color: #adb5bd;
+}
+
+.navbar-toggler {
+    border: none; /* No hamburger border */
+    background-color: transparent; /* Знімає темне тло */
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    background-color: transparent; /* Забороняє зміну кольору на темний при наведенні */
+    box-shadow: none; /* Прибирає тінь */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    border-radius: 5px;
+    padding: 5px;
+}
+
