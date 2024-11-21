@@ -32,6 +32,29 @@
     background-color: rgba(166, 225, 250, 1);
 }
 
+.tr-bg-color1 {
+    background-color: rgba(0, 7, 45, 0.7);
+
+}
+.tr-bg-color2 {
+    background-color: rgba(0, 28, 85, 0.7);
+}
+.tr-bg-color3 {
+    background-color: rgba(10, 36, 114,0.7);
+}
+.tr-bg-color4 {
+    background-color: rgba(52, 91, 206, 0.7);
+}
+.tr-bg-color5 {
+    background-color: rgba(166, 225, 250, 0.7);
+}
+
+.bg-blur {
+    backdrop-filter: blur(10px); /* Застосовує блюр з радіусом 10px */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
 /* FONTS AND CONNECTED STUFF */
 p, h1, h2, h3, h4, h5, h6, a, figcaption, li, .nav-link {
     font-family: "Lato", sans-serif;
@@ -182,8 +205,9 @@ footer {
 .img-based-container {
     position: relative; /* Allows positioning of overlay content */
     display: block;
-    width: 95%; /* Full width */
+    width: auto; /* Full width */
     height: 100%;
+    max-height: 50vh; /* Maximum height */
     max-width: 900px; /* Maximum width */
     margin: 20px auto; /* Center block horizontally */
     border-radius: 25px; /* Rounded corners */
@@ -210,24 +234,19 @@ footer {
     flex-direction: row;
     align-items: stretch;
     justify-content: space-between;
-    border-radius: 15px;
+    border-radius: 25px;
     overflow: hidden;
     padding: 0;
     color: white;
-    width: 90%;
     max-width: 900px;
-    margin: 50px auto;
+    margin: 20px auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Image container */
 .info-image {
-    flex: 0 0 60%;
-    max-width: 90%;
+    max-width: 60vw;
     height: 100%;
-    max-height: 50vh;
-    padding: 0;
-    margin: 0 auto;
 }
 .info-link {
     text-decoration: none;
@@ -235,18 +254,20 @@ footer {
 }
 /* Image styling */
 .info-image img {
-    width: 100%;
+    width: auto;
+    min-width: 30vw;
+    max-height: 50vh;
     height: 100%;
     object-fit: cover;
 }
 
 /* Text block styling */
 .info-text {
-    flex: 0 0 40%;
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
+    margin:0 auto;
 }
 
 /* Text styles */
@@ -274,7 +295,12 @@ footer {
 .info-block .links {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+}
+.info-text .sublabel {
+    text-align: left; !important
+    margin: 0 auto;
+    padding: 0;
 }
 
 .links li {
@@ -292,6 +318,17 @@ footer {
     color: #ffffff;
 }
 
+@media (min-width: 992px) {
+    .info-block .links {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .info-block .links {
+        display: none;
+    }
+}
 
 
 /* IMAGES */
@@ -299,6 +336,19 @@ footer {
 .main-bg {
     background-image: url('/media/label.png');
 }
+
+.UA-history-bg {
+    background: url('Ukraine/media/HistoryLabel.jpg');
+}
+.UA-culture-bg {
+
+background-image: url('Ukraine/media/CultureLabel.png');
+}
+
+.UA-landscape-bg {
+background-image: url('Ukraine/media/LandscapeLabel.jpg');
+}
+
 
 .descibe-img {
     width: 100%;
@@ -382,4 +432,6 @@ footer {
     border-radius: 5px;
     padding: 5px;
 }
+
+
 
