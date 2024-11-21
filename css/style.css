@@ -54,6 +54,7 @@ p, h1, h2, h3, h4, h5, h6, a, figcaption, li, .nav-link {
 }
 
 
+
 .main-description {
     font-size: 1.5em;
     text-align: center;
@@ -62,11 +63,65 @@ p, h1, h2, h3, h4, h5, h6, a, figcaption, li, .nav-link {
     padding: 50px 40px;
 }
 
+.topic-title {
+    font-size: 2.5em;
+    color: #FFF;
+    padding: 50px 0 0 0;
+}
+
+.topic-description {
+    font-size: 1.5em;
+    color: #FFF;
+    padding: 20px 50px;
+}
+
+.topic-action {
+    font-size: 1.2em;
+    color: #FFF;
+    padding: 0 50px;
+}
+
+.button-like {
+    background-color: rgba(10, 36, 114, 1);
+    border: none;
+    max-width: 200px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    align-self: center;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
 /* BACKGROUND AND BLOCKS*/
 body {
     /*display: block;*/
     margin: 0;
     background-color: #00072D;
+}
+
+.media-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 20px auto;
+    background-color: rgba(52, 91, 206, 1);
+    border-radius: 25px;
+    list-style-type: none;
+    align-content: center;
+
 }
 
 header {
@@ -76,6 +131,13 @@ header {
     width: 100%;
     height: 100vh;
 }
+footer {
+    padding: 0 0;
+    margin: 0;
+    flex-shrink: 0;
+    width: 100%;
+}
+
 .hero { /* Section of text in header */
     position: absolute;
     top: 50%;
@@ -105,6 +167,8 @@ header {
     z-index: -1; /* Place video behind the content */
 }
 
+
+
 /* BLOCK OF COUNTRY ON MAIN PAGE */
 
 
@@ -112,23 +176,28 @@ header {
 
 .img-based-container {
     position: relative; /* Allows positioning of overlay content */
-    width: 100%; /* Full width */
+    display: block;
+    width: 95%; /* Full width */
+    height: 100%;
     max-width: 900px; /* Maximum width */
     margin: 20px auto; /* Center block horizontally */
-    border-radius: 15px; /* Rounded corners */
+    border-radius: 25px; /* Rounded corners */
     overflow: hidden; /* Clip overflowing content */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow */
-    background-color: #0d1b36; /* Fallback background */
     text-align: center; /* Center-align text */
 }
 
+/* Regular block for topic */
 
+.regular-topic {
+    display: block;
+    width: 100%; /* Full width */
+    max-width: 900px; /* Maximum width */
+    margin: 20px auto; /* Center block horizontally */
+    overflow: hidden; /* Clip overflowing content */
+    text-align: center; /* Center-align text */
 
-
-
-
-
-
+}
 
 /* Main container */
 .info-block {
@@ -149,9 +218,11 @@ header {
 /* Image container */
 .info-image {
     flex: 0 0 60%;
-    max-width: 100%;
+    max-width: 90%;
     height: 100%;
+    max-height: 50vh;
     padding: 0;
+    margin: 0 auto;
 }
 .info-link {
     text-decoration: none;
@@ -175,15 +246,16 @@ header {
 
 /* Text styles */
 .label {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0 0 10px;
+    text-align: center;
 }
 
 .sublabel {
     color: rgba(166, 225, 250, 1);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 10px 0 20px;
-    line-height: 1.5;
+    text-align: center;
 }
 
 /* Links styling */
@@ -224,15 +296,47 @@ header {
 }
 /* Image for image-based block */
 .background-image img {
+    position: absolute; /* Position the image behind the content */
     width: 100%; /* Stretch image to full width */
     height: 100%; /* Stretch image to full height */
     object-fit: cover; /* Maintain aspect ratio and crop excess */
-    position: absolute; /* Position the image behind the content */
     top: 0;
     left: 0;
     z-index: -1; /* Place image behind the text */
+    border-radius: 25px;
+    opacity: 0.3;
+    background: lightgray 50% / cover no-repeat;
 }
 
+.rounded-line {
+    border: none;
+    border-top: 5px solid white;
+    border-radius: 5px;
+    width: 75%;
+    margin: 20px auto;
+}
+
+
+/* ICONS */
+
+.social-networks {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    gap: 20px;
+}
+
+
+.social-icon {
+    font-size: 2em;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: rgba(10, 36, 114, 0.8);
+}
 
 /* NAV BAR */
 .custom-navbar {
