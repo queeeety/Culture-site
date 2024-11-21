@@ -111,12 +111,17 @@ body {
     background-color: #00072D;
 }
 
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .media-links {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 20px 0;
-    margin: 20px auto;
+    margin: 20px 20px;
     background-color: rgba(52, 91, 206, 1);
     border-radius: 25px;
     list-style-type: none;
@@ -254,8 +259,15 @@ footer {
 .sublabel {
     color: rgba(166, 225, 250, 1);
     font-size: 1.5rem;
-    margin: 10px 0 20px;
+    margin: 10px 20px;
     text-align: center;
+
+}
+
+.plain-text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 20px;
 }
 
 /* Links styling */
@@ -312,7 +324,7 @@ footer {
     border: none;
     border-top: 5px solid white;
     border-radius: 5px;
-    width: 75%;
+    width: 85%;
     margin: 20px auto;
 }
 
