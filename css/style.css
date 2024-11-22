@@ -1,0 +1,555 @@
+<<<<<<< Updated upstream
+=======
+/* OUR COLORS */
+
+.color1 {
+    color: rgba(0, 7, 45, 1);
+}
+.color2 {
+    color: rgba(0, 28, 85, 1);
+}
+.color3 {
+    color: rgba(10, 36, 114, 1);
+}
+.color4 {
+    color: rgba(52, 91, 206, 1);
+}
+.color5 {
+    color: rgba(166, 225, 250, 1);
+}
+
+.bg-color1 {
+    background-color: rgba(0, 7, 45, 1);
+}
+.bg-color2 {
+    background-color: rgba(0, 28, 85, 1);
+}
+.bg-color3 {
+    background-color: rgba(10, 36, 114, 1);
+}
+.bg-color4 {
+    background-color: rgba(52, 91, 206, 1);
+}
+.bg-color5 {
+    background-color: rgba(166, 225, 250, 1);
+}
+
+.tr-bg-color1 {
+    background-color: rgba(0, 7, 45, 0.7);
+
+}
+.tr-bg-color2 {
+    background-color: rgba(0, 28, 85, 0.7);
+}
+.tr-bg-color3 {
+    background-color: rgba(10, 36, 114,0.7);
+}
+.tr-bg-color4 {
+    background-color: rgba(52, 91, 206, 0.7);
+}
+.tr-bg-color5 {
+    background-color: rgba(166, 225, 250, 0.7);
+}
+
+.bg-blur {
+    backdrop-filter: blur(10px); /* Застосовує блюр з радіусом 10px */
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+/* FONTS AND CONNECTED STUFF */
+p, h1, h2, h3, h4, h5, h6, a, figcaption, li, .nav-link {
+    font-family: "Lato", sans-serif;
+    padding: 0 5px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.hero .label {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.hero .sublabel {
+    font-size: 1.5rem;
+    margin:5px 0 0 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+
+.main-description {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 500;
+    color: #A6E1FA;
+    padding: 50px 40px;
+}
+
+.topic-title {
+    font-size: 2.5em;
+    color: #FFF;
+    padding: 50px 0 0 0;
+}
+
+.topic-description {
+    font-size: 1.5em;
+    color: #FFF;
+    padding: 20px 50px;
+}
+
+.topic-action {
+    font-size: 1.2em;
+    color: #FFF;
+    padding: 0 50px;
+}
+
+.button-like {
+    background-color: rgba(10, 36, 114, 1);
+    border: none;
+    max-width: 200px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    align-self: center;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+/* BACKGROUND AND BLOCKS*/
+body {
+    /*display: block;*/
+    margin: 0;
+    background-color: #00072D;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.full-screen-section {
+    margin: 0 0;
+}
+
+.media-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 20px 20px;
+    background-color: rgba(52, 91, 206, 1);
+    border-radius: 25px;
+    list-style-type: none;
+    align-content: center;
+
+}
+
+header {
+    padding: 0 0;
+    margin: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+footer {
+    padding: 0 0;
+    margin: 0;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.hero { /* Section of text in header */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, 0%);
+    background: transparent;
+    z-index: 1;
+}
+
+.hero-image { /* Section of header */
+    background-image: url('Ukraine/media/HistoryLabel.png'); /* Вкажіть правильний шлях до зображення */
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    padding: 5px 0 0 0;
+}
+
+.background-video {
+    position: absolute; /* Position the video behind the content */
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretch video to full width */
+    height: 100%; /* Stretch video to full height */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    z-index: -1; /* Place video behind the content */
+}
+
+
+.main-block-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 50px 5% 0 5%;
+    max-width: 1000px;
+}
+.main-block-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(10, 36, 114, 0.8);
+    border-radius: 50px;
+    padding: 25px 20px 25px 20px;
+    margin: 50px 5% 0 5%;
+    max-width: 1000px;
+    z-index: 3;
+
+}
+
+.main-block-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 20px 25px 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    z-index: 1;
+}
+
+.main-block-3-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: rgba(10, 36, 114, 0.8);
+    padding: 0;
+    margin: -75px auto 0 auto;
+    z-index: 1;
+}
+
+/* BLOCK OF COUNTRY ON MAIN PAGE */
+
+
+/* Picture-background container */
+
+.img-based-container {
+    position: relative; /* Allows positioning of overlay content */
+    display: block;
+    width: auto; /* Full width */
+    height: 100%;
+    max-height: 50vh; /* Maximum height */
+    max-width: 900px; /* Maximum width */
+    margin: 20px auto; /* Center block horizontally */
+    border-radius: 25px; /* Rounded corners */
+    overflow: hidden; /* Clip overflowing content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow */
+    text-align: center; /* Center-align text */
+}
+
+/* Regular block for topic */
+
+.regular-topic {
+    display: block;
+    width: 100%; /* Full width */
+    max-width: 900px; /* Maximum width */
+    margin: 20px auto; /* Center block horizontally */
+    overflow: hidden; /* Clip overflowing content */
+    text-align: center; /* Center-align text */
+
+}
+
+/* Main container */
+.info-block {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0;
+    color: white;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.spotify {
+    border-radius:12px;
+    margin:15px
+}
+
+
+
+/* BUTTON */
+
+.button-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 25px 0;
+}
+
+.button-back-box {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 91, 206, 0.5);
+    border-radius: 8px;
+    z-index: 0;
+}
+.button-text {
+    color: white; /* Білий текст */
+    font-size: 20px;
+    text-align: left;
+    padding: 0 0;
+    margin: 0;
+}
+.button-main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.2); /* Синій напівпрозорий */
+    padding: 20px 10px 10px 10px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.button-icon {
+    height: 30px; /* Висота іконки */
+    width: auto; /* Автоматична ширина */
+    margin: auto 10px;
+}
+
+/* Image container */
+.info-image {
+    max-width: 900px;
+    max-height: 50vh;
+}
+.info-link {
+    text-decoration: none;
+    padding: 0;
+}
+/* Image styling */
+.info-image img {
+    min-width: 30vw;
+    max-height: 50vh;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* Text block styling */
+.info-text {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin:0 auto;
+}
+
+/* Text styles */
+.label {
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.sublabel {
+    color: rgba(166, 225, 250, 1);
+    font-size: 1.5rem;
+    margin: 10px 20px;
+    text-align: center;
+
+}
+
+.plain-text {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 20px 20px 20px;
+}
+.quote {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 20px 20px 20px;
+}
+
+.img-description-text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    color: rgba(166, 225, 250, 1);
+}
+
+.read-more {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 0 10px 0 ;
+    margin: 0 auto;
+}
+
+/* Links styling */
+.info-block .links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+}
+.info-text .sublabel {
+    text-align: left; !important
+    margin: 0 auto;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: rgba(166, 225, 250, 1);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.links li a:hover {
+    color: #ffffff;
+}
+
+@media (min-width: 992px) {
+    .info-block .links, .read-more {
+        display: block;
+    }
+}
+
+@media (max-width: 991px) {
+    .info-block .links {
+        display: none;
+    }
+}
+
+
+/* IMAGES */
+
+.main-bg {
+    background-image: url('/media/label.png');
+}
+
+.describe-img {
+    max-width: 90%;
+    max-height: 70vh;
+    object-fit: fill;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding:0;
+}
+
+
+/* Image for image-based block */
+.background-image img {
+    position: absolute; /* Position the image behind the content */
+    width: 100%; /* Stretch image to full width */
+    height: 100%; /* Stretch image to full height */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place image behind the text */
+    border-radius: 25px;
+    opacity: 0.3;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.rounded-line {
+    border: none;
+    border-top: 5px solid white;
+    border-radius: 5px;
+    width: 85%;
+    margin: 20px auto;
+}
+
+
+/* ICONS */
+
+.social-networks {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    gap: 20px;
+}
+
+
+.social-icon {
+    font-size: 2em;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: rgba(10, 36, 114, 0.8);
+}
+
+/* NAV BAR */
+.custom-navbar {
+    background-color:rgba(10, 36, 114, 0.8); /* BG */
+    border-radius: 25px; /* Rounded edges */
+    padding: 10px 20px;
+    margin: 0 10px 10px 10px;
+}
+
+.custom-navbar .nav-link {
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px;
+}
+.custom-navbar .nav-link:hover {
+    color: #adb5bd;
+}
+
+.navbar-toggler {
+    border: none; /* No hamburger border */
+    background-color: transparent;
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+>>>>>>> Stashed changes
