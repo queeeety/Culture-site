@@ -289,6 +289,7 @@ footer {
     overflow: hidden;
     padding: 0;
     color: white;
+    width: 90%;
     max-width: 900px;
     margin: 20px auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
@@ -349,9 +350,10 @@ footer {
 
 /* Image container */
 .info-image {
-    max-width: 900px;
-    max-height: 50vh;
+    max-width: 60vw;
+    height: 100%
 }
+
 .info-link {
     text-decoration: none;
     padding: 0;
@@ -363,16 +365,17 @@ footer {
     height: 100%;
     width: auto;
     object-fit: cover;
-    margin: 0 auto;
 }
 
 /* Text block styling */
 .info-text {
+    flex: 0 0 40%; /* Ensure the width is at least 40% */
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin:0 auto;
+    margin: 0 0;
+    min-width: 40%; /* Minimum width of 40% */
 }
 
 /* Text styles */
