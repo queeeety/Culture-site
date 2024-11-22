@@ -1,3 +1,4 @@
+
 /* OUR COLORS */
 
 .color1 {
@@ -71,7 +72,7 @@ p, h1, h2, h3, h4, h5, h6, a, figcaption, li, .nav-link {
 
 .hero .sublabel {
     font-size: 1.5rem;
-    margin-top: 20px;
+    margin:5px 0 0 0;
     line-height: 1.5;
     text-align: left;
 }
@@ -139,6 +140,10 @@ section {
     margin: 0 auto;
 }
 
+.full-screen-section {
+    margin: 0 0;
+}
+
 .media-links {
     display: flex;
     flex-direction: column;
@@ -159,6 +164,7 @@ header {
     width: 100%;
     height: 100vh;
 }
+
 footer {
     padding: 0 0;
     margin: 0;
@@ -171,12 +177,12 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-90%, 0%);
+    background: transparent;
     z-index: 1;
 }
 
 .hero-image { /* Section of header */
     position: relative;
-    background-image: url('media/label.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -196,6 +202,51 @@ footer {
 }
 
 
+.main-block-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: 50px 5% 0 5%;
+    max-width: 1000px;
+}
+.main-block-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(10, 36, 114, 0.8);
+    border-radius: 50px;
+    padding: 25px 20px 25px 20px;
+    margin: 50px 5% 0 5%;
+    max-width: 1000px;
+    z-index: 3;
+
+}
+
+.main-block-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 20px 25px 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    z-index: 1;
+}
+
+.main-block-3-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: rgba(10, 36, 114, 0.8);
+    padding: 0;
+    margin: -75px auto 0 auto;
+    z-index: 1;
+}
 
 /* BLOCK OF COUNTRY ON MAIN PAGE */
 
@@ -238,42 +289,99 @@ footer {
     overflow: hidden;
     padding: 0;
     color: white;
+    width: 90%;
     max-width: 900px;
     margin: 20px auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+
+
+.spotify {
+    border-radius:12px;
+    margin:15px
+}
+
+
+
+/* BUTTON */
+
+.button-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 25px 0;
+}
+
+.button-back-box {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 91, 206, 0.5);
+    border-radius: 8px;
+    z-index: 0;
+}
+.button-text {
+    color: white; /* Білий текст */
+    font-size: 20px;
+    text-align: left;
+    padding: 0 0;
+    margin: 0;
+}
+.button-main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.2); /* Синій напівпрозорий */
+    padding: 20px 10px 10px 10px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.button-icon {
+    height: 30px; /* Висота іконки */
+    width: auto; /* Автоматична ширина */
+    margin: auto 10px;
+}
+
 /* Image container */
 .info-image {
     max-width: 60vw;
-    height: 100%;
+    height: 100%
 }
+
 .info-link {
     text-decoration: none;
     padding: 0;
 }
 /* Image styling */
 .info-image img {
-    width: auto;
     min-width: 30vw;
     max-height: 50vh;
     height: 100%;
+    width: auto;
     object-fit: cover;
 }
 
 /* Text block styling */
 .info-text {
+    flex: 0 0 40%; /* Ensure the width is at least 40% */
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin:0 auto;
+    margin: 0 0;
+    min-width: 40%; /* Minimum width of 40% */
 }
 
 /* Text styles */
 .label {
     font-size: 1.8rem;
-    margin: 0 0 10px;
+    margin: 0 0 10px 0;
     text-align: center;
 }
 
@@ -286,9 +394,28 @@ footer {
 }
 
 .plain-text {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 20px 20px 20px;
+}
+.quote {
     font-size: 1rem;
     text-align: center;
-    margin: 0 20px;
+    margin: 0 20px 20px 20px;
+}
+
+.img-description-text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    color: rgba(166, 225, 250, 1);
+}
+
+.read-more {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0 0 10px 0 ;
+    margin: 0 auto;
 }
 
 /* Links styling */
@@ -319,7 +446,7 @@ footer {
 }
 
 @media (min-width: 992px) {
-    .info-block .links {
+    .info-block .links, .read-more {
         display: block;
     }
 }
@@ -337,25 +464,16 @@ footer {
     background-image: url('/media/label.png');
 }
 
-.UA-history-bg {
-    background: url('Ukraine/media/HistoryLabel.jpg');
-}
-.UA-culture-bg {
-
-background-image: url('Ukraine/media/CultureLabel.png');
-}
-
-.UA-landscape-bg {
-background-image: url('Ukraine/media/LandscapeLabel.jpg');
-}
-
-
-.descibe-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.describe-img {
+    max-width: 90%;
+    max-height: 70vh;
+    object-fit: fill;
     border-radius: 25px;
+    margin: 0 auto;
+    padding:0;
 }
+
+
 /* Image for image-based block */
 .background-image img {
     position: absolute; /* Position the image behind the content */
@@ -435,3 +553,4 @@ background-image: url('Ukraine/media/LandscapeLabel.jpg');
 
 
 
+>>>>>>> Stashed changes

@@ -15,11 +15,10 @@
 <main>
     <header>
         <div class="hero-image">
-            <video autoplay loop muted playsinline class="background-video">
-                <source src="media/labelVideo.mp4" type="video/mp4" />
-                <!-- Fallback text -->
-                Your browser does not support the video tag. <br>
-                <a href=https://www.youtube.com/watch?v=ugYSPa-wfHY&list=PLgnnmC_MV3G2Tk8uJ6UsuEAFez1vtk2Hx&index=9">Full video here</a>
+            <video autoplay loop muted playsinline class="background-video" oncanplay="this.play()">
+                <source src="media/labelVideo.mp4" type="video/mp4"/>
+                Your browser does not support the video tag.
+<!--                <a href=https://www.youtube.com/watch?v=ugYSPa-wfHY&list=PLgnnmC_MV3G2Tk8uJ6UsuEAFez1vtk2Hx&index=9">Full video here</a>-->
             </video>
 
             <nav class="navbar navbar-expand-lg custom-navbar">
@@ -32,16 +31,16 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">History</a>
+                                <a class="nav-link" href="#History">History</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Culture</a>
+                                <a class="nav-link" href="#Culture">Culture</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Landscapes & architecture</a>
+                                <a class="nav-link" href="#Landscapes">Landscapes & architecture</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Things we are proud of</a>
+                                <a class="nav-link" href="#Proud">Things we are proud of</a>
                             </li>
                         </ul>
                     </div>
@@ -109,7 +108,6 @@
                 </div>
 
                 <div class="content">
-                    <p class="topic-title">History</p>
                     <p class="topic-description">
                         We have all the biomes. Literally: mountains, seas, deserts, forests, resorts, fields and so much more. Lots of castles and casual buildings from different ages and generations lies on our land.
                     </p>
