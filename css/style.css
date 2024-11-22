@@ -248,6 +248,14 @@ footer {
     z-index: 1;
 }
 
+.contact-blocks {
+    height: 150px;
+	background-color: #0A2472;
+	margin: 15px;
+	max-width: 300px;
+	border-radius: 15px;
+}
+
 /* BLOCK OF COUNTRY ON MAIN PAGE */
 
 
