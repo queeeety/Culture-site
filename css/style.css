@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 /* OUR COLORS */
 
 .color1 {
@@ -183,7 +182,6 @@ footer {
 }
 
 .hero-image { /* Section of header */
-    background-image: url('Ukraine/media/HistoryLabel.png'); /* Вкажіть правильний шлях до зображення */
     position: relative;
     background-size: cover;
     background-position: center;
