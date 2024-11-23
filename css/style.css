@@ -123,6 +123,7 @@ p, h1, h2, h3, h4, h5, h6, a, figcaption, li, .nav-link {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 100px 0 5px 0;
 }
 
 
@@ -405,6 +406,10 @@ footer {
     font-size: 1.2rem;
     text-align: center;
     margin: 0 20px 20px 20px;
+}
+
+.some-margin {
+    margin: 20px;
 }
 .quote {
     font-size: 1rem;
