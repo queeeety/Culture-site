@@ -59,7 +59,7 @@
 /* FONTS AND CONNECTED STUFF */
 p, h1, h2, h3, h4, h5, h6, a, figcaption, li, .nav-link {
     font-family: "Lato", sans-serif;
-    padding: 0 5px;
+    padding: 0;
     font-weight: 400;
     color: #FFF;
 }
@@ -282,16 +282,28 @@ footer {
 
 .img-based-container {
     position: relative; /* Allows positioning of overlay content */
-    display: block;
-    width: auto; /* Full width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
     height: 100%;
-    max-height: 50vh; /* Maximum height */
     max-width: 900px; /* Maximum width */
     margin: 20px auto; /* Center block horizontally */
     border-radius: 25px; /* Rounded corners */
     overflow: hidden; /* Clip overflowing content */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow */
     text-align: center; /* Center-align text */
+}
+
+.img-based-container .content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background to the content */
+    color: white; /* Optional: Ensures text is readable */
+    text-align: center;
 }
 
 /* Regular block for topic */
@@ -357,6 +369,10 @@ footer {
     .info-text a {
         color: white;
         text-decoration: none;
+    }
+
+    .window-optimize{
+        background-size: contain;
     }
 
 }
@@ -531,7 +547,6 @@ footer {
     .info-block .links {
         display: none;
     }
-
 }
 
 /* IMAGES */
@@ -558,6 +573,23 @@ footer {
     height: 100%; /* Make the image take the full height of the carousel item */
     width: auto; /* Maintain the aspect ratio */
     object-fit: contain /* Ensure the image covers the container */
+}
+
+.carousel-caption{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(10, 36, 114, 0.4);
+    border-radius: 25px;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+.carousel-caption p {
+    text-align: center; /* Для горизонтального центрування тексту */
+    margin: 0 5px; /* Забирає зайві відступи */
 }
 
 /* Image for image-based block */
@@ -587,6 +619,8 @@ footer {
 
 .social-networks {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0 0 10px 0;
     gap: 20px;
@@ -637,6 +671,24 @@ footer {
     border-radius: 5px;
     padding: 5px;
 }
+
+
+
+/* MEDIA */
+.youtube-video {
+    width: 100%;
+    height: auto;
+    min-height: 40vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+
+
 
 
 
