@@ -59,7 +59,7 @@
 /* FONTS AND CONNECTED STUFF */
 p, h1, h2, h3, h4, h5, h6, a, figcaption, li, .nav-link {
     font-family: "Lato", sans-serif;
-    padding: 0 5px;
+    padding: 0;
     font-weight: 400;
     color: #FFF;
 }
@@ -359,6 +359,10 @@ footer {
         text-decoration: none;
     }
 
+    .window-optimize{
+        background-size: contain;
+    }
+
 }
 
 .spotify {
@@ -531,7 +535,6 @@ footer {
     .info-block .links {
         display: none;
     }
-
 }
 
 /* IMAGES */
@@ -558,6 +561,23 @@ footer {
     height: 100%; /* Make the image take the full height of the carousel item */
     width: auto; /* Maintain the aspect ratio */
     object-fit: contain /* Ensure the image covers the container */
+}
+
+.carousel-caption{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(10, 36, 114, 0.4);
+    border-radius: 25px;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+.carousel-caption p {
+    text-align: center; /* Для горизонтального центрування тексту */
+    margin: 0 5px; /* Забирає зайві відступи */
 }
 
 /* Image for image-based block */
@@ -637,6 +657,24 @@ footer {
     border-radius: 5px;
     padding: 5px;
 }
+
+
+
+/* MEDIA */
+.youtube-video {
+    width: 100%;
+    height: auto;
+    min-height: 40vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+
+
 
 
 
