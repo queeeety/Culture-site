@@ -182,6 +182,24 @@ footer {
     z-index: 1;
 }
 
+@media (max-width: 900px) {
+
+    .hero .label {
+        font-size: 2rem;
+    }
+    .hero .sublabel {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 600px) {
+
+    .hero {
+        left: 0;
+        transform: translate(0%, 0%);
+    }
+
+
+}
 .hero-image { /* Section of header */
     position: relative;
     background-size: cover;
@@ -304,7 +322,44 @@ footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 500px) {
+    .info-block {
+        flex-direction: column;
+        position: relative;
+    }
 
+    .info-image {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .info-text {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .info-block .links, .read-more {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .info-text a {
+        color: white;
+        text-decoration: none;
+    }
+
+}
 
 .spotify {
     border-radius:12px;
@@ -472,12 +527,12 @@ footer {
     }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 500px) and (max-width: 991px) {
     .info-block .links {
         display: none;
     }
-}
 
+}
 
 /* IMAGES */
 
@@ -494,6 +549,16 @@ footer {
     padding:0;
 }
 
+.carousel-item {
+    height: 40vh; /* Set a fixed height for the carousel items */
+    width: 100%; /* Set a fixed width for the carousel items */
+}
+
+.carousel-item img {
+    height: 100%; /* Make the image take the full height of the carousel item */
+    width: auto; /* Maintain the aspect ratio */
+    object-fit: contain /* Ensure the image covers the container */
+}
 
 /* Image for image-based block */
 .background-image img {
@@ -545,6 +610,7 @@ footer {
     border-radius: 25px; /* Rounded edges */
     padding: 10px 20px;
     margin: 0 10px 10px 10px;
+    z-index: 5;
 }
 
 .custom-navbar .nav-link {
