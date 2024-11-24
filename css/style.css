@@ -268,11 +268,11 @@ footer {
 }
 
 .contact-blocks {
-    height: 150px;
-	background-color: #0A2472;
-	margin: 15px;
-	max-width: 300px;
-	border-radius: 15px;
+    height: 100%;
+    background-color: #0A2472;
+    margin: 15px;
+    max-width: 300px;
+    border-radius: 15px;
 }
 
 /* BLOCK OF COUNTRY ON MAIN PAGE */
@@ -382,7 +382,13 @@ footer {
     margin:15px
 }
 
+/* Form Inputs */
 
+.inputs {
+    background-color: #00072D;
+    border-color: #00072D;
+    color: #ffffff;
+}
 
 /* BUTTON */
 
@@ -636,6 +642,12 @@ footer {
 
 .social-icon:hover {
     color: rgba(10, 36, 114, 0.8);
+}
+
+.contact-icon {
+    color: #fff;
+    font-size: 1.5em;
+    padding: 10px 0px;
 }
 
 /* NAV BAR */
