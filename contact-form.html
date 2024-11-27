@@ -19,12 +19,12 @@
     <header>
       <div
         class="hero-image"
-        style="background-image: url(&quot;./media/contact-us.jpg&quot;)"
+        style="background-image: url(./media/contact-us.jpg)"
       >
         <div class="hero-image" style="background-color: rgba(0, 7, 45, 0.5)">
           <nav class="navbar navbar-expand-lg custom-navbar">
             <div class="container-fluid">
-              <a class="navbar-brand text-white" href="../index.html"
+              <a class="navbar-brand text-white" href="index.html"
                 ><i class="fa-solid fa-house fa-lg" style="color: #ffffff"></i
               ></a>
               <button
@@ -158,12 +158,13 @@
         style="max-width: 400px; margin: auto; border-radius: 25px"
       >
         <form
-          action="https://formspree.io/[your email address goes here]"
+          action="https://formspree.io/tymofii.bezverkhyi2@mail.dcu.ie"
           method="post"
         >
           <p>
             <label for="contact-name">Your Name</label><br />
             <input
+              id="contact-name"
               class="inputs"
               placeholder="Enter your name here"
               type="text"
@@ -173,6 +174,7 @@
           <p>
             <label for="contact-email">Your email address</label><br />
             <input
+              id="contact-email"
               class="inputs"
               placeholder="Enter your email here"
               type="email"
@@ -182,6 +184,7 @@
           <p>
             <label for="contact-phone">Your phone number</label><br />
             <input
+              id="contact-phone"
               class="inputs"
               placeholder="Enter your phone number here"
               type="tel"
@@ -191,6 +194,7 @@
           <p>
             <label for="contact-message">Your message</label><br />
             <textarea
+              id="contact-message"
               class="inputs"
               placeholder="Enter message here"
               name="contact-message"
