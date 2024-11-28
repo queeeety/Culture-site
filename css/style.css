@@ -389,6 +389,8 @@ footer {
     background-color: #00072D;
     border-color: #00072D;
     color: #ffffff;
+    width: 325px;
+    border-radius: 5px;
 }
 
 /* BUTTON */
