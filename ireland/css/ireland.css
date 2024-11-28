@@ -16,3 +16,24 @@
 	text-align: center;
 	/* Center-align text */
 }
+
+.hero-image {
+	background-blend-mode: darken;
+	background-color: rgba(0, 0, 0, 0.25);
+	background-size: cover;
+}
+
+.img-based-container .content {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#proc-button {
+	width: 100%;
+	background-color: rgba(10, 36, 114, 0.8);
+	color: #fff;
+	border-color: rgba(10, 36, 114, 0.8);
+	margin: 10px;
+	margin-bottom: 25px;
+	border-width: 5px;
+	border-radius: 15px;
+}
