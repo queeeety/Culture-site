@@ -1,0 +1,18 @@
+.img-fluid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	/* Maximum width */
+	margin: 20px auto;
+	/* Center block horizontally */
+	border-radius: 25px;
+	/* Rounded corners */
+	overflow: hidden;
+	/* Clip overflowing content */
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+	/* Add shadow */
+	text-align: center;
+	/* Center-align text */
+}
